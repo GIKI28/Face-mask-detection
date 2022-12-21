@@ -70,8 +70,8 @@ def detect_and_predict_mask(frame, faceNet, maskNet):
 	return (locs, preds)
 
 # load our serialized face detector model from disk
-prototxtPath = r"C:\Users\gaura\OneDrive\Desktop\Python\Face-Mask-Detection-master - Copy\Face-Mask-Detection-master\face_detector\deploy.prototxt"
-weightsPath = r"C:\Users\gaura\OneDrive\Desktop\Python\Face-Mask-Detection-master - Copy\Face-Mask-Detection-master\face_detector\res10_300x300_ssd_iter_140000.caffemodel"
+prototxtPath = r"Path of model"
+weightsPath = r"weightmodel path"
 faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
 # load the face mask detector model from disk
